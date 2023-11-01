@@ -109,7 +109,10 @@ export default function Navbar() {
                         Logout
                       </a>
                     </div>
-                  ) : null}
+                  ) : null }
+                  
+                 
+                  
                   <div className="flow-root">
                     <Link
                       to={"/"}
@@ -117,11 +120,23 @@ export default function Navbar() {
                     >
                       <img
                         className="inline-block w-10 h-10 rounded-full"
-                        src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
+                        // src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
+                        src={'https://cdn-icons-png.flaticon.com/512/3884/3884871.png'}
                         alt="Dan_Abromov"
                       />{" "}
                     </Link>
                   </div>
+                </div>
+
+                <div className="flow-root">
+                  <a
+                    // onClick={logout}
+                    href="/login"
+                    className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
+                    style={{ color: mode === "dark" ? "white" : "black" }}
+                  >
+                    Login
+                  </a>
                 </div>
 
                 <div className="border-t border-gray-200 px-4 py-6">
@@ -248,7 +263,17 @@ export default function Navbar() {
                     >
                       Logout
                     </a>
-                  ) : null}
+                  ) :
+                  <a
+                  // onClick={logout}
+                  href='/login'
+                  className="text-sm font-medium text-gray-700 cursor-pointer  "
+                  style={{ color: mode === "dark" ? "white" : "" }}
+                >
+                  Login
+                </a>
+                  
+                  }
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">
@@ -270,7 +295,8 @@ export default function Navbar() {
                   <a href="#" className="flex items-center text-gray-700 ">
                     <img
                       className="inline-block w-10 h-10 rounded-full"
-                      src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
+                      src={'https://cdn-icons-png.flaticon.com/512/3884/3884871.png'}
+                      // src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
                       alt="Dan_Abromov"
                     />
                   </a>

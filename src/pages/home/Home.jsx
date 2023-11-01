@@ -28,8 +28,7 @@ function Home() {
 
   return (
     <Layout>
-      {/* <button className='bg-gray-300' onClick={()=>addCartItem()}>add</button>
-      <button className='bg-pink-300' onClick={()=>deleteCartItem()}>Remove</button> */}
+     
       <HeroSection/>
       <Filter/>
       <ProductCard/>
